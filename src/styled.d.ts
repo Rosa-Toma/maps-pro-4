@@ -3,6 +3,7 @@ import "styled-components";
 declare module "styled-components" {
     export interface Theme {
         isLight: boolean;
+        icon: ReactNode;
         palette: {
             text: {
                 primary: string;

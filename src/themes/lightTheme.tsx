@@ -1,7 +1,9 @@
 import { Theme } from "styled-components";
+import { BiMoon } from "react-icons/bi";
 
 const lightTheme: Theme = {
     isLight: true,
+    icon: <BiMoon size="1.2em" />,
     palette: {
         text: {
             primary: "rgba(0, 0, 0, 0.87)",

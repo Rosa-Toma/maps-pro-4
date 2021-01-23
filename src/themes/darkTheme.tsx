@@ -1,7 +1,9 @@
 import { Theme } from "styled-components";
+import { BiSun } from "react-icons/bi";
 
 const darkTheme: Theme = {
     isLight: false,
+    icon: <BiSun size="1.2em" />,
     palette: {
         text: {
             primary: "#FFF",

@@ -1,5 +1,7 @@
+import { Layout } from "./styles";
+
 const Logo = () => {
-    return <img src="" alt="" />;
+    return <Layout src="" alt="" />;
 };
 
 export default Logo;

@@ -21,7 +21,7 @@ const App = () => {
                             <Link to="/information">information</Link>
                             <Link to="/account">compte</Link>
                         </Menu>
-                        <Button onClick={updateTheme} />
+                        <Button icon={theme.icon} onClick={updateTheme} />
                     </Header>
                     <Main>
                         <Switch>
