@@ -1,13 +1,18 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
 import { Header, Logo, Menu, Button, Main } from "components";
 import { Home, Search, Information, Account } from "pages";
-import { Layout } from "./style";
+import { useTheme } from "hooks";
+import { Layout, GlobalStyle } from "./styles";
 
 const App = () => {
+    const [theme, updateTheme] = useTheme();
+
     return (
-        <>
-            <Router>
-                <Layout>
+        <ThemeProvider theme={theme}>
+            <GlobalStyle />
+            <Layout>
+                <Router>
                     <Header>
                         <Logo />
                         <Menu>
@@ -16,7 +21,7 @@ const App = () => {
                             <Link to="/information">information</Link>
                             <Link to="/account">compte</Link>
                         </Menu>
-                        <Button />
+                        <Button onClick={updateTheme} />
                     </Header>
                     <Main>
                         <Switch>
@@ -34,9 +39,9 @@ const App = () => {
                             </Route>
                         </Switch>
                     </Main>
-                </Layout>
-            </Router>
-        </>
+                </Router>
+            </Layout>
+        </ThemeProvider>
     );
 };
 
