@@ -1,8 +1,13 @@
+import { Sidebar, Toolbar, Map, Tabs, TabPanel, Tab, Tools, Button, Dropdown } from "components";
+import { Layout } from "./styles";
+
 const Home = () => {
     return (
-        <>
-            <h1>Home</h1>
-        </>
+        <Layout>
+            <Sidebar />
+            <Toolbar />
+            <Map />
+        </Layout>
     );
 };
 

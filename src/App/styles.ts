@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -17,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 `;
 
-export const Layout = styled(Fragment)`
+export const Layout = styled.div`
     display: grid;
     grid-template-areas:
         "header"
