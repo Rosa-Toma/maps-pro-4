@@ -14,7 +14,7 @@ const App = () => {
             <Layout>
                 <Router>
                     <Header>
-                        <Logo />
+                        <Logo width={150} height={50} />
                         <Menu>
                             <Link to="/">carte</Link>
                             <Link to="/search">recherche</Link>
