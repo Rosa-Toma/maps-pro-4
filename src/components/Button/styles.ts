@@ -7,16 +7,12 @@ type Props = {
 
 export const Layout = styled.button`
     grid-area: button;
+    align-self: center;
+    justify-self: center;
 
     cursor: pointer;
     outline: none;
     user-select: none;
-
-    /* display: flex;
-    align-items: center; */
-
-    margin: 5px;
-    padding: 5px;
 
     width: ${({ width }: Props) => (width ? `${width}px` : "auto")};
     height: ${({ height }: Props) => (height ? `${height}px` : "auto")};
