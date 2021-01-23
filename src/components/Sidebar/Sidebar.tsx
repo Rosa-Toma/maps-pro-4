@@ -1,11 +1,12 @@
+import { ReactNode } from "react";
 import { Layout } from "./styles";
 
-const Sidebar = () => {
-    return (
-        <Layout>
-            <h1>sidebar</h1>
-        </Layout>
-    );
+type Props = {
+    children: ReactNode;
+};
+
+const Sidebar = ({ children }: Props) => {
+    return <Layout>{children}</Layout>;
 };
 
 export default Sidebar;

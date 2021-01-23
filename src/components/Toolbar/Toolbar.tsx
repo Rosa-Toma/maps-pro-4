@@ -1,10 +1,11 @@
+import { ReactNode } from "react";
 import { Layout } from "./styles";
-const Toolbar = () => {
-    return (
-        <Layout>
-            <h1>Toolbar</h1>
-        </Layout>
-    );
+
+type Props = {
+    children: ReactNode;
+};
+const Toolbar = ({ children }: Props) => {
+    return <Layout>{children}</Layout>;
 };
 
 export default Toolbar;
