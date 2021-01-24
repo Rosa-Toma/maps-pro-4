@@ -25,7 +25,7 @@ const App = () => {
                     </Header>
                     <Main>
                         <Switch>
-                            <Route path="/" exact>
+                            <Route exact path="/">
                                 <Home />
                             </Route>
                             <Route path="/search">
