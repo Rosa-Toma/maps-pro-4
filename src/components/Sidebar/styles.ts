@@ -7,7 +7,7 @@ export const Layout = styled.div`
     grid-template-areas:
         "tabs"
         "tabPanel";
-    grid-template-rows: 80px;
+    grid-template-rows: 100px;
     box-shadow: 3px 3px 3px ${({ theme }) => theme.palette.divider};
 
     z-index: 2;

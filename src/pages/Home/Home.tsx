@@ -1,4 +1,4 @@
-import { Sidebar, Toolbar, Map, Tabs, TabPanel, Tab, Tools, Button, Dropdown } from "components";
+import { Sidebar, Toolbar, Map, Tabs, TabPanel, Tools, Button, Dropdown } from "components";
 import { Layout } from "./styles";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -32,12 +32,31 @@ const Home = () => {
                 </Router>
             </Sidebar>
             <Toolbar>
-                <Tools></Tools>
-                <Tools></Tools>
-                <Tools></Tools>
-                <Tools></Tools>
-                <Tools></Tools>
-                <Tools></Tools>
+                <Tools title="standard">
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                </Tools>
+                <Tools title="navigation">
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                </Tools>
+                <Tools title="outils">
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                </Tools>
+                <Tools title="accroche">
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                </Tools>
+                <Tools title="dessin">
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                </Tools>
+                <Tools title="affichage">
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                    <Button width={80} height={50} onClick={() => console.log("hello")} />
+                </Tools>
             </Toolbar>
             <Map />
         </Layout>

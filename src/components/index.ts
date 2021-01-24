@@ -10,5 +10,4 @@ export { default as Toolbar } from "./Toolbar";
 export { default as Tools } from "./Tools";
 export { default as Map } from "./Map";
 export { default as Tabs } from "./Tabs";
-export { default as Tab } from "./Tab";
 export { default as TabPanel } from "./TabPanel";

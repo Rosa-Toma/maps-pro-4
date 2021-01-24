@@ -14,10 +14,6 @@ export const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.palette.text.primary};
         font-family: verdana;
     }
-
-     #map {
-         filter: ${({ theme }) => theme.palette.map.filter}
-     }
 `;
 
 export const Layout = styled.div`
